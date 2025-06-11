@@ -115,12 +115,9 @@ document.addEventListener('DOMContentLoaded', function() {
     threshold: 0.1
   });
 
-  sections.forEach(section => {
-    section.style.opacity = '0';
-    section.style.transform = 'translateY(20px)';
-    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(section);
-  });
+ sections.forEach(section => {
+  observer.observe(section);
+});
 
   // ========== Scroll Suave para Links ==========
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
