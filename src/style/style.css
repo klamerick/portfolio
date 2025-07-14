@@ -109,23 +109,25 @@ header p {
     max-width: 600px;
 }
 
-/* NAVEGAÇÃO */
-nav {
+/* NAVEGAÇÃO ESTILO NEON */
+.navbar {
     display: flex;
     justify-content: flex-start;
     padding: 20px 0;
+    align-items: center;
 }
 
-nav ul {
+.navbar-menu {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 20px;
     padding-left: 0;
+    margin: 0;
 }
 
-nav ul li a {
+.navbar-menu li a {
     text-decoration: none;
     color: #00ffe1;
     border: 2px solid #00ffe1;
@@ -133,14 +135,28 @@ nav ul li a {
     border-radius: 25px;
     font-weight: bold;
     transition: all 0.3s ease;
+    display: inline-block;
 }
 
-nav ul li a:hover {
+.navbar-menu li a:hover {
     background-color: #00ffe1;
     color: #121212;
     box-shadow: 0 0 10px #00ffe1;
     transform: scale(1.05);
 }
+
+/* LOGO ESTILO NEON */
+.logo-img {
+    height: 120px;
+    border-radius: 50%; /* ícone circular */
+}
+
+.logo-img:hover {
+    transform: scale(1.1); /* aumenta 10% ao passar o mouse */
+    box-shadow: 0 0 5px rgba(0, 255, 225, 0.8), 
+                0 0 15px rgba(0, 255, 225, 0.5); /* brilho mais suave e moderno */
+}
+
 
 /* SEÇÕES GERAIS */
 section {
