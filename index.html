@@ -1,131 +1,878 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>      
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Renan Klamerick</title>
-    <link rel="stylesheet" href="src/style/style.css">
-</head>
-<body>
-<main>
-   <nav class="navbar">
-        <div class="navbar-logo">
-    <a href="#inicio" class="logo-button">
-        <img src="img/Logos/logotipo-.png" class="logo-img" alt="Logo">
-    </a>
-        </div>
-        <ul class="navbar-menu">
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#sobre">Sobre Mim</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-        </ul>
-    </nav>
-</main>
 
-    <header>
-        <div class="container">
-            <h1>Renan Klamerick</h1>
-            <p>Técnico em Informática | Estudante de Agroecologia | Apaixonado por Tecnologia e Design</p>
-        </div>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Portfólio profissional de Klamerick - Tecnologia, Desenvolvimento Web e Design."
+    >
+
+    <title>Klamerick | Portfólio</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Ícones -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- Fundo decorativo -->
+    <div class="background-blur blur-one"></div>
+    <div class="background-blur blur-two"></div>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <nav class="navbar container">
+
+            <a href="#inicio" class="logo">
+                <span>&lt;</span>RK<span>/&gt;</span>
+            </a>
+
+            <div class="nav-menu" id="nav-menu">
+
+                <a href="#inicio" class="nav-link">Início</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#habilidades" class="nav-link">Habilidades</a>
+                <a href="#projetos" class="nav-link">Projetos</a>
+                <a href="#contato" class="nav-link">Contato</a>
+
+            </div>
+
+
+            <div class="nav-actions">
+
+                <button
+                    class="theme-toggle"
+                    id="theme-toggle"
+                    aria-label="Alterar tema"
+                >
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+
+                <button
+                    class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Abrir menu"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+
+        </nav>
+
     </header>
 
-        <section id="sobre">
-    <div class="container sobre-flex">
-        <!-- Foto + Ícones -->
-        <div class="sobre-img">
-            <img src="img/me.jpg" alt="Renan Klamerick" class="profile-pic">
 
-            <!-- Redes sociais -->
-            <div class="social-icons">
-                <a href="https://instagram.com/renanklame" target="_blank" title="Instagram">
-                    <img src="img/icons/instagram.svg" alt="Instagram">
-                </a>
-                <a href="https://wa.me/5569993912197" target="_blank" title="WhatsApp">
-                    <img src="img/icons/whatsapp.svg" alt="WhatsApp">
-                </a>
-                <a href="mailto:renanklame@hotmail.com" title="E-mail">
-                    <img src="img/icons/email.svg" alt="Email">
-                </a>
-                <a href="https://github.com/klamerick" title="github">
-                    <img src="img/icons/github.svg" alt="github">
-                </a>
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero" id="inicio">
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <p class="hero-greeting">
+                        Olá, eu sou
+                    </p>
+
+                    <h1>
+                        Renan <span>Klamerick</span>
+                    </h1>
+
+                    <h2 id="typing-text">
+                        Técnico em Informática
+                    </h2>
+
+                    <p class="hero-description">
+
+                        Apaixonado por tecnologia, desenvolvimento,
+                        informática e soluções digitais. Transformo
+                        ideias e problemas em soluções práticas.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a href="#projetos" class="btn btn-primary">
+
+                            Ver projetos
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+
+                        <a href="#contato" class="btn btn-secondary">
+
+                            Entrar em contato
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="social-links">
+
+                        <!-- ALTERE OS LINKS -->
+
+                        <a href="#" target="_blank" aria-label="GitHub">
+
+                            <i class="fa-brands fa-github"></i>
+
+                        </a>
+
+
+                        <a href="#" target="_blank" aria-label="Instagram">
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+
+                        <a href="#" target="_blank" aria-label="LinkedIn">
+
+                            <i class="fa-brands fa-linkedin"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-visual">
+
+                    <div class="code-window">
+
+                        <div class="code-header">
+
+                            <div class="window-dots">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                            <span class="file-name">
+                                portfolio.js
+                            </span>
+
+                        </div>
+
+
+                        <div class="code-content">
+
+<pre><code><span class="code-blue">const</span> developer = {
+
+    name: <span class="code-green">"Klamerick"</span>,
+
+    skills: [
+        <span class="code-green">"Tecnologia"</span>,
+        <span class="code-green">"Web"</span>,
+        <span class="code-green">"Design"</span>
+    ],
+
+    status:
+        <span class="code-green">"Sempre aprendendo"</span>
+
+};
+
+<span class="code-purple">console</span>.log(
+    developer
+);</code></pre>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
-        </div>
 
-        <!-- Texto -->
-        <div class="sobre-texto">
-            <h2>Sobre Mim</h2>
-            <p>Olá! Meu nome é Renan Klamerick, e sou um entusiasta de tecnologia com foco em hardware e desenvolvimento. 
-                Sempre gostei de desmontar e montar computadores, explorando como cada peça funciona e como tudo se conecta 
-                para criar um sistema funcional. Essa curiosidade me motivou a aprender mais sobre tecnologia desde cedo.</p>
-            <p>Além da parte de hardware, também tenho interesse em desenvolvimento de software e estou sempre em busca de novas 
-                linguagens, ferramentas e projetos que possam me desafiar. Gosto de compartilhar o que aprendo e transformar ideias 
-                em soluções práticas. Este espaço foi criado justamente para isso: mostrar um pouco da minha jornada e das coisas que 
-                venho construindo com dedicação.</p>
-        </div>
-    </div>
-</section>
+        </section>
 
 
-    <section id="inicio">
-        <div class="container">
-            <h2>Seja bem-vindo ao meu primeiro projeto com HTML e CSS</h2>
-            <p>Este é o meu portfólio, um espaço dedicado a compartilhar meus projetos, habilidades e experiências. Aqui, você poderá explorar um pouco do meu trabalho, conhecer os desafios que enfrentei e as soluções que desenvolvi ao longo da minha jornada. Convido você a navegar e descobrir mais sobre minha trajetória, minha paixão pela tecnologia e minha dedicação em transformar ideias em realidade. Sinta-se à vontade para explorar e conhecer um pouco do que tenho construído!</p>
-        </div>
-    </section>
 
-    <section id="projetos">
-        <div class="container">
-            <h2>Projetos</h2>
-            <div class="project-grid">
-                <!-- Projeto 1 -->
-                <div class="project-card">
-                    <h3>AgroEcoLab</h3>
-                    <p>
-                        O AgroEcoLabs é um simulador de fazenda agroecológica, criado para promover práticas sustentáveis, educativas e inovadoras no setor agrícola. 
-                        Este projeto visa proporcionar um ambiente digital onde usuários podem planejar, experimentar e aprender sobre diferentes estratégias de manejo
-                        agroecológico, simulando cenários reais de produção sustentável.
+        <!-- ================= SOBRE ================= -->
+
+        <section class="section" id="sobre">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <p class="section-subtitle">
+                        QUEM SOU
                     </p>
+
+                    <h2>
+                        Sobre <span>mim</span>
+                    </h2>
+
                 </div>
-                <!-- Projeto 2 -->    
-                <div class="project-card">
-                    <h3>Portfólio Pessoal</h3>
+
+
+                <div class="about-grid">
+
+                    <div class="about-card">
+
+                        <div class="about-icon">
+
+                            <i class="fa-solid fa-user"></i>
+
+                        </div>
+
+                        <h3>
+                            Tecnologia na prática
+                        </h3>
+
+                        <p>
+
+                            Sou Técnico em Informática e tenho interesse
+                            em diversas áreas da tecnologia, incluindo
+                            hardware, sistemas, desenvolvimento web,
+                            automação e soluções digitais.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-card">
+
+                        <div class="about-icon">
+
+                            <i class="fa-solid fa-lightbulb"></i>
+
+                        </div>
+
+                        <h3>
+                            Soluções
+                        </h3>
+
+                        <p>
+
+                            Busco compreender os problemas antes de
+                            procurar uma solução, utilizando tecnologia
+                            de forma prática e eficiente.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-card">
+
+                        <div class="about-icon">
+
+                            <i class="fa-solid fa-rocket"></i>
+
+                        </div>
+
+                        <h3>
+                            Evolução constante
+                        </h3>
+
+                        <p>
+
+                            Estou constantemente desenvolvendo novos
+                            projetos e aprimorando minhas habilidades
+                            através da prática.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-text">
+
                     <p>
-                        Desenvolvimento completo deste portfólio com HTML e CSS modernos, utilizando boas práticas de design
-                        responsivo, animações e identidade visual personalizada. O projeto visa apresentar habilidades técnicas,
-                        experiências e projetos desenvolvidos de forma clara e impactante.
+
+                        Minha trajetória na tecnologia envolve experiência
+                        com computadores, sistemas e projetos digitais.
+                        Atualmente, busco desenvolver soluções cada vez
+                        mais completas e transformar conhecimento técnico
+                        em resultados reais.
+
                     </p>
+
                 </div>
-                <!-- Projeto 3 -->
-                <div class="project-card">
-                    <h3>Servidor NAS Caseiro</h3>
-                    <p>
-                        Projeto de montagem de um servidor NAS (Network Attached Storage) utilizando hardware reaproveitado e
-                        software open-source como o TrueNAS. O servidor foi configurado para oferecer armazenamento em rede
-                        doméstico, com recursos como backup automático, acesso remoto seguro, gerenciamento de permissões e
-                        sincronização de arquivos entre dispositivos.
-                    </p>
-                </div>
+
             </div>
-        </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Renan Klamerick. Todos os direitos reservados.</p>
+        </section>
+
+
+
+        <!-- ================= HABILIDADES ================= -->
+
+        <section class="section section-alt" id="habilidades">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <p class="section-subtitle">
+                        COMPETÊNCIAS
+                    </p>
+
+                    <h2>
+                        Minhas <span>habilidades</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+
+                    <div class="skill-card">
+
+                        <i class="fa-brands fa-html5"></i>
+
+                        <h3>HTML5</h3>
+
+                        <p>
+                            Estruturação de páginas modernas.
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <i class="fa-brands fa-css3-alt"></i>
+
+                        <h3>CSS3</h3>
+
+                        <p>
+                            Layouts responsivos e interfaces modernas.
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <i class="fa-brands fa-js"></i>
+
+                        <h3>JavaScript</h3>
+
+                        <p>
+                            Interatividade e funcionalidades.
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <i class="fa-solid fa-desktop"></i>
+
+                        <h3>Informática</h3>
+
+                        <p>
+                            Manutenção e configuração de computadores.
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <i class="fa-solid fa-microchip"></i>
+
+                        <h3>Hardware</h3>
+
+                        <p>
+                            Diagnóstico e montagem de computadores.
+                        </p>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <i class="fa-solid fa-palette"></i>
+
+                        <h3>Design</h3>
+
+                        <p>
+                            Criação de artes e materiais digitais.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= SERVIÇOS ================= -->
+
+        <section class="section" id="servicos">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <p class="section-subtitle">
+                        O QUE POSSO FAZER
+                    </p>
+
+                    <h2>
+                        Meus <span>serviços</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="services-grid">
+
+
+                    <article class="service-card">
+
+                        <div class="service-number">
+                            01
+                        </div>
+
+                        <i class="fa-solid fa-laptop"></i>
+
+                        <h3>
+                            Suporte Técnico
+                        </h3>
+
+                        <p>
+
+                            Diagnóstico, manutenção e configuração
+                            de computadores.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-number">
+                            02
+                        </div>
+
+                        <i class="fa-solid fa-code"></i>
+
+                        <h3>
+                            Desenvolvimento Web
+                        </h3>
+
+                        <p>
+
+                            Criação de sites modernos, responsivos
+                            e personalizados.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-number">
+                            03
+                        </div>
+
+                        <i class="fa-solid fa-paintbrush"></i>
+
+                        <h3>
+                            Design Digital
+                        </h3>
+
+                        <p>
+
+                            Desenvolvimento de artes para redes sociais,
+                            projetos e negócios.
+
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= PROJETOS ================= -->
+
+        <section class="section section-alt" id="projetos">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <p class="section-subtitle">
+                        PORTFÓLIO
+                    </p>
+
+                    <h2>
+                        Meus <span>projetos</span>
+                    </h2>
+
+                </div>
+
+
+                <!-- FILTROS -->
+
+                <div class="project-filters">
+
+                    <button class="filter-btn active" data-filter="all">
+                        Todos
+                    </button>
+
+                    <button class="filter-btn" data-filter="web">
+                        Web
+                    </button>
+
+                    <button class="filter-btn" data-filter="design">
+                        Design
+                    </button>
+
+                    <button class="filter-btn" data-filter="tecnologia">
+                        Tecnologia
+                    </button>
+
+                </div>
+
+
+                <!-- PROJETOS -->
+
+                <div class="projects-grid">
+
+
+                    <article
+                        class="project-card"
+                        data-category="web"
+                    >
+
+                        <div class="project-image project-placeholder">
+
+                            <i class="fa-solid fa-code"></i>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                Desenvolvimento Web
+                            </span>
+
+                            <h3>
+                                Projeto Web
+                            </h3>
+
+                            <p>
+
+                                Descrição do projeto desenvolvido.
+
+                            </p>
+
+                            <button
+                                class="project-button"
+                                data-title="Projeto Web"
+                                data-description="Adicione aqui uma descrição detalhada do seu projeto."
+                            >
+
+                                Ver detalhes
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article
+                        class="project-card"
+                        data-category="design"
+                    >
+
+                        <div class="project-image project-placeholder">
+
+                            <i class="fa-solid fa-palette"></i>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                Design
+                            </span>
+
+                            <h3>
+                                Artes para Redes Sociais
+                            </h3>
+
+                            <p>
+
+                                Criação de materiais visuais digitais.
+
+                            </p>
+
+                            <button
+                                class="project-button"
+                                data-title="Artes para Redes Sociais"
+                                data-description="Projeto voltado para criação de materiais visuais e conteúdos digitais."
+                            >
+
+                                Ver detalhes
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article
+                        class="project-card"
+                        data-category="tecnologia"
+                    >
+
+                        <div class="project-image project-placeholder">
+
+                            <i class="fa-solid fa-computer"></i>
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                Tecnologia
+                            </span>
+
+                            <h3>
+                                Solução Técnica
+                            </h3>
+
+                            <p>
+
+                                Projeto voltado para informática
+                                e soluções tecnológicas.
+
+                            </p>
+
+                            <button
+                                class="project-button"
+                                data-title="Solução Técnica"
+                                data-description="Descrição detalhada da solução técnica desenvolvida."
+                            >
+
+                                Ver detalhes
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CONTATO ================= -->
+
+        <section class="section contact-section" id="contato">
+
+            <div class="container">
+
+                <div class="contact-box">
+
+                    <p class="section-subtitle">
+                        VAMOS CONVERSAR?
+                    </p>
+
+                    <h2>
+
+                        Tem um projeto em mente?
+
+                        <span>
+                            Entre em contato.
+                        </span>
+
+                    </h2>
+
+
+                    <p>
+
+                        Estou disponível para conversar sobre projetos,
+                        tecnologia e novas oportunidades.
+
+                    </p>
+
+
+                    <div class="contact-buttons">
+
+                        <!-- ALTERE O NÚMERO -->
+
+                        <a
+                            href="https://wa.me/5500000000000"
+                            target="_blank"
+                            class="btn btn-primary"
+                        >
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            WhatsApp
+
+                        </a>
+
+
+                        <!-- ALTERE O E-MAIL -->
+
+                        <a
+                            href="mailto:seuemail@email.com"
+                            class="btn btn-secondary"
+                        >
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            E-mail
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <a href="#inicio" class="logo">
+
+                <span>&lt;</span>Klamerick<span>/&gt;</span>
+
+            </a>
+
+
+            <p>
+
+                © <span id="year"></span>
+                Klamerick. Todos os direitos reservados.
+
+            </p>
+
+
+            <button
+                id="scroll-top"
+                class="scroll-top"
+                aria-label="Voltar ao topo"
+            >
+
+                <i class="fa-solid fa-arrow-up"></i>
+
+            </button>
+
         </div>
+
     </footer>
 
-    <!-- Botão para voltar ao topo -->
-    <button id="scrollTopBtn" title="Voltar ao topo">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-        <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 
-        12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 
-        14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 
-        45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
-    </button>
 
-    <!-- Importando o arquivo JavaScript -->
-    <script src="src/script/script.js"></script>
+
+    <!-- ================= MODAL ================= -->
+
+    <div class="modal" id="project-modal">
+
+        <div class="modal-content">
+
+            <button
+                class="modal-close"
+                id="modal-close"
+                aria-label="Fechar"
+            >
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <span class="project-category">
+                PROJETO
+            </span>
+
+
+            <h2 id="modal-title">
+                Título do projeto
+            </h2>
+
+
+            <p id="modal-description">
+                Descrição do projeto.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>
